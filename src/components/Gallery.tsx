@@ -44,10 +44,10 @@ export default function Gallery() {
       <section id="gallery" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-amber-600 font-medium tracking-wider text-sm uppercase">
+            <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
               Gallery
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
               Explore Our Property
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
@@ -84,7 +84,7 @@ export default function Gallery() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-amber-400 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-[#b37f4c] transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X size={32} />

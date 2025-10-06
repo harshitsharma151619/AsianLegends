@@ -4,7 +4,7 @@ export default function Rooms() {
   const rooms = [
     {
       name: 'Deluxe Room',
-      price: 1990,
+      price: 199,
       image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
       size: '350 sq ft',
       guests: '2 Guests',
@@ -13,7 +13,7 @@ export default function Rooms() {
     },
     {
       name: 'Executive Suite',
-      price: 3490,
+      price: 349,
       image: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
       size: '550 sq ft',
       guests: '3 Guests',
@@ -22,7 +22,7 @@ export default function Rooms() {
     },
     {
       name: 'Presidential Suite',
-      price: 5990,
+      price: 599,
       image: 'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800',
       size: '900 sq ft',
       guests: '4 Guests',
@@ -43,10 +43,10 @@ export default function Rooms() {
     <section id="rooms" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-amber-600 font-medium tracking-wider text-sm uppercase">
+          <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
             Accommodations
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
             Our Luxury Rooms & Suites
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
@@ -66,13 +66,13 @@ export default function Rooms() {
                   alt={room.name}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-amber-600 text-white px-4 py-2 rounded-md font-medium">
-                  ₹{room.price}/night
+                <div className="absolute top-4 right-4 bg-[#8C5A2E] text-white px-4 py-2 rounded-md font-medium">
+                  ${room.price}/night
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">{room.name}</h3>
+                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-2">{room.name}</h3>
                 <p className="text-slate-600 mb-4">{room.description}</p>
 
                 <div className="flex items-center gap-4 mb-4 text-sm text-slate-600">
@@ -92,7 +92,7 @@ export default function Rooms() {
                       const Icon = getAmenityIcon(amenity);
                       return (
                         <div key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                          {Icon && <Icon size={16} className="text-amber-600" />}
+                          {Icon && <Icon size={16} className="text-[#8C5A2E]" />}
                           <span>{amenity}</span>
                         </div>
                       );
@@ -100,7 +100,7 @@ export default function Rooms() {
                   </div>
                 </div>
 
-                <button className="w-full bg-slate-900 text-white py-3 rounded-md hover:bg-amber-600 transition-colors font-medium">
+                <button className="w-full bg-[#704822] text-white py-3 rounded-md hover:bg-[#5A3A1B] transition-colors font-medium">
                   Book Now
                 </button>
               </div>

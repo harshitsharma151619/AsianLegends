@@ -2,7 +2,7 @@ import { Award, Users, MapPin, Star } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { icon: Award, value: '10+', label: 'Years Experience' },
+    { icon: Award, value: '15+', label: 'Years Experience' },
     { icon: Users, value: '50K+', label: 'Happy Guests' },
     { icon: MapPin, value: '3', label: 'Locations' },
     { icon: Star, value: '4.9', label: 'Guest Rating' },
@@ -13,10 +13,10 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-amber-600 font-medium text-sm tracking-wider py-4 uppercase">
+            <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
               About Us
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
               Where Ancient Traditions Meet Modern Luxury
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
@@ -30,8 +30,8 @@ export default function About() {
                 const Icon = stat.icon;
                 return (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="bg-amber-100 p-3 rounded-lg">
-                      <Icon className="text-amber-600" size={24} />
+                    <div className="bg-[#eaddc8] p-3 rounded-lg">
+                      <Icon className="text-[#8C5A2E]" size={24} />
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-slate-900">{stat.value}</div>

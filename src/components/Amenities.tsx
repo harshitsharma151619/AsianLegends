@@ -45,13 +45,13 @@ export default function Amenities() {
   ];
 
   return (
-    <section id="amenities" className="py-20 bg-slate-900 text-white">
+    <section id="amenities" className="py-20 bg-[#412812] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-amber-400 font-medium tracking-wider text-sm uppercase">
+          <span className="text-[#FFD700] font-medium tracking-wider text-sm uppercase">
             Facilities
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 mb-6">
             World-Class Amenities
           </h2>
           <p className="text-slate-300 max-w-2xl mx-auto">
@@ -65,9 +65,9 @@ export default function Amenities() {
             return (
               <div
                 key={index}
-                className="bg-slate-800 p-6 rounded-lg hover:bg-slate-700 transition-colors group"
+                className="bg-[#5A3A1B] p-6 rounded-lg hover:bg-[#704822] transition-colors group"
               >
-                <div className="bg-amber-600 w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="bg-[#8C5A2E] w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{amenity.title}</h3>
@@ -77,14 +77,14 @@ export default function Amenities() {
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-amber-600 to-amber-700 rounded-2xl p-8 md:p-12 text-center">
+        <div className="mt-16 bg-gradient-to-r from-[#8C5A2E] to-[#704822] rounded-2xl p-8 md:p-12 text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
             Experience True Luxury
           </h3>
-          <p className="text-lg mb-8 text-amber-50 max-w-2xl mx-auto">
+          <p className="text-lg mb-8 text-[#f8f5f0] max-w-2xl mx-auto">
             Book your stay at Asian Legends and discover why we're the preferred choice for discerning travelers
           </p>
-          <button className="bg-white text-amber-600 px-8 py-4 rounded-md hover:bg-slate-100 transition-colors font-medium text-lg">
+          <button className="bg-white text-[#704822] px-8 py-4 rounded-md hover:bg-slate-100 transition-colors font-medium text-lg">
             View Special Offers
           </button>
         </div>

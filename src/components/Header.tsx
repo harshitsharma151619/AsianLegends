@@ -29,29 +29,15 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
   };
 
   return (
-    <>
-      <div className="bg-slate-900 text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
-              <Phone size={14} />
-              <span>+91 9053585447</span>
-            </a>
-            
-          </div>
-          <a href="mailto:info@asianlegends.com" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
-              <Mail size={14} />
-              <span>info@asianlegends.com</span>
-            </a>
-        </div>
-      </div>
+     <>
+      
 
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <div className="text-2xl font-bold text-slate-900">
-                <img src="./logo.jpg" alt="" className='h-20 w-20 rounded-full' />
+              <div className="text-2xl font-bold font-serif text-slate-900">
+                <span className="text-[#8C5A2E]">Asian</span> Legends
               </div>
             </div>
 
@@ -62,8 +48,8 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-medium transition-colors ${
                     activeSection === item.id
-                      ? 'text-amber-600'
-                      : 'text-slate-700 hover:text-amber-600'
+                      ? 'text-[#8C5A2E]'
+                      : 'text-slate-700 hover:text-[#8C5A2E]'
                   }`}
                 >
                   {item.label}
@@ -71,7 +57,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
               ))}
             </nav>
 
-            <button className="hidden md:block bg-amber-600 text-white px-6 py-2 rounded-md hover:bg-amber-700 transition-colors font-medium">
+            <button className="hidden md:block bg-[#8C5A2E] text-white px-6 py-2 rounded-md hover:bg-[#704822] transition-colors font-medium">
               Book Now
             </button>
 
@@ -93,14 +79,14 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left py-2 px-4 rounded-md transition-colors ${
                     activeSection === item.id
-                      ? 'bg-amber-50 text-amber-600 font-medium'
+                      ? 'bg-[#f8f5f0] text-[#8C5A2E] font-medium'
                       : 'text-slate-700 hover:bg-slate-50'
                   }`}
                 >
                   {item.label}
                 </button>
               ))}
-              <button className="w-full bg-amber-600 text-white px-6 py-2 rounded-md hover:bg-amber-700 transition-colors font-medium mt-4">
+              <button className="w-full bg-[#8C5A2E] text-white px-6 py-2 rounded-md hover:bg-[#704822] transition-colors font-medium mt-4">
                 Book Now
               </button>
             </nav>
@@ -108,5 +94,6 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
         )}
       </header>
     </>
+
   );
 }
