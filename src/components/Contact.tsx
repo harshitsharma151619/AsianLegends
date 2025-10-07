@@ -34,8 +34,8 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (234) 567-890',
-      subContent: '+1 (234) 567-891',
+      content: '+91 9053585447',
+      subContent: '+91 7619006100',
     },
     {
       icon: Mail,
@@ -55,7 +55,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
+          <span className="text-pink-600 font-medium tracking-wider text-sm uppercase">
             Get in Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
@@ -72,10 +72,10 @@ export default function Contact() {
             return (
               <div
                 key={index}
-                className="bg-slate-100 p-6 rounded-lg hover:shadow-lg transition-shadow"
+                className="bg-slate-50 p-6 rounded-lg hover:shadow-lg transition-shadow"
               >
-                <div className="bg-[#eaddc8] w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="text-[#8C5A2E]" size={24} />
+                <div className="bg-pink-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="text-pink-600" size={24} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">{info.title}</h3>
                 <p className="text-slate-700">{info.content}</p>
@@ -100,7 +100,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -114,7 +114,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -143,7 +143,7 @@ export default function Contact() {
                     name="guests"
                     value={formData.guests}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   >
                     {[1, 2, 3, 4, 5, 6].map((num) => (
                       <option key={num} value={num}>
@@ -165,7 +165,7 @@ export default function Contact() {
                     name="checkIn"
                     value={formData.checkIn}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -178,7 +178,7 @@ export default function Contact() {
                     name="checkOut"
                     value={formData.checkOut}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-[#996633] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -200,7 +200,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-[#8C5A2E] text-white py-3 rounded-md hover:bg-[#704822] transition-colors font-medium"
+                className="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white py-3 rounded-md hover:from-pink-700 hover:to-rose-700 transition-all font-medium shadow-lg"
               >
                 Send Message
               </button>

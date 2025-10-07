@@ -59,7 +59,7 @@ export default function Events() {
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
+          <span className="text-pink-600 font-medium tracking-wider text-sm uppercase">
             Events & Celebrations
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
@@ -87,7 +87,7 @@ export default function Events() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="bg-[#8C5A2E] p-2 rounded-lg">
+                      <div className="bg-gradient-to-br from-pink-600 to-rose-600 p-2 rounded-lg shadow-lg">
                         <Icon className="text-white" size={20} />
                       </div>
                       <h3 className="text-xl font-bold text-white">{event.title}</h3>
@@ -97,8 +97,8 @@ export default function Events() {
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">{event.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-[#8C5A2E] font-medium">{event.capacity}</span>
-                    <button className="text-slate-900 hover:text-[#8C5A2E] transition-colors font-medium text-sm">
+                    <span className="text-sm text-pink-600 font-medium">{event.capacity}</span>
+                    <button className="text-slate-900 hover:text-pink-600 transition-colors font-medium text-sm">
                       Learn More →
                     </button>
                   </div>
@@ -120,12 +120,12 @@ export default function Events() {
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-gold-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#FCD34D] rounded-full"></div>
                     <span className="text-sm text-slate-300">{feature}</span>
                   </div>
                 ))}
               </div>
-              <button className="bg-[#8C5A2E] text-white px-8 py-4 rounded-md hover:bg-[#704822] transition-colors font-medium">
+              <button className="bg-gradient-to-r from-pink-600 to-rose-600 text-white px-8 py-4 rounded-md hover:from-pink-700 hover:to-rose-700 transition-all font-medium shadow-lg">
                 Book Your Event Now
               </button>
             </div>
@@ -136,7 +136,7 @@ export default function Events() {
                 alt="Event Space"
                 className="rounded-lg shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#8C5A2E] text-white p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-[#E6BE00] to-[#C9A300] text-white p-6 rounded-lg shadow-xl">
                 <div className="text-3xl font-bold">500+</div>
                 <div className="text-sm">Events Hosted</div>
               </div>

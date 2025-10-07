@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
 
 interface HeaderProps {
@@ -29,7 +29,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
   };
 
   return (
-     <>
+    <>
       
 
       <header className="bg-white shadow-md sticky top-0 z-50">
@@ -37,7 +37,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <div className="text-2xl font-bold font-serif text-slate-900">
-                <span className="text-[#8C5A2E]">Asian</span> Legends
+                <span className="text-pink-600">Asian</span> Legends
               </div>
             </div>
 
@@ -48,8 +48,8 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
                   onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-medium transition-colors ${
                     activeSection === item.id
-                      ? 'text-[#8C5A2E]'
-                      : 'text-slate-700 hover:text-[#8C5A2E]'
+                      ? 'text-pink-600'
+                      : 'text-slate-700 hover:text-pink-600'
                   }`}
                 >
                   {item.label}
@@ -57,7 +57,7 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
               ))}
             </nav>
 
-            <button className="hidden md:block bg-[#8C5A2E] text-white px-6 py-2 rounded-md hover:bg-[#704822] transition-colors font-medium">
+            <button className="hidden md:block bg-gradient-to-r from-pink-600 to-rose-600 text-white px-6 py-2 rounded-md hover:from-pink-700 hover:to-rose-700 transition-all font-medium">
               Book Now
             </button>
 
@@ -79,14 +79,14 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left py-2 px-4 rounded-md transition-colors ${
                     activeSection === item.id
-                      ? 'bg-[#f8f5f0] text-[#8C5A2E] font-medium'
+                      ? 'bg-pink-50 text-pink-600 font-medium'
                       : 'text-slate-700 hover:bg-slate-50'
                   }`}
                 >
                   {item.label}
                 </button>
               ))}
-              <button className="w-full bg-[#8C5A2E] text-white px-6 py-2 rounded-md hover:bg-[#704822] transition-colors font-medium mt-4">
+              <button className="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white px-6 py-2 rounded-md hover:from-pink-700 hover:to-rose-700 transition-all font-medium mt-4">
                 Book Now
               </button>
             </nav>
@@ -94,6 +94,5 @@ export default function Header({ activeSection, setActiveSection }: HeaderProps)
         )}
       </header>
     </>
-
   );
 }

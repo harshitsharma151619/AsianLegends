@@ -44,7 +44,7 @@ export default function Gallery() {
       <section id="gallery" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
+            <span className="text-pink-600 font-medium tracking-wider text-sm uppercase">
               Gallery
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
@@ -84,7 +84,7 @@ export default function Gallery() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-[#b37f4c] transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-pink-400 transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X size={32} />

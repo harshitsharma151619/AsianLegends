@@ -43,7 +43,7 @@ export default function Rooms() {
     <section id="rooms" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
+          <span className="text-pink-600 font-medium tracking-wider text-sm uppercase">
             Accommodations
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
@@ -66,7 +66,7 @@ export default function Rooms() {
                   alt={room.name}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-[#8C5A2E] text-white px-4 py-2 rounded-md font-medium">
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-[#E6BE00] to-[#C9A300] text-white px-4 py-2 rounded-md font-medium shadow-lg">
                   ${room.price}/night
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Rooms() {
                       const Icon = getAmenityIcon(amenity);
                       return (
                         <div key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                          {Icon && <Icon size={16} className="text-[#8C5A2E]" />}
+                          {Icon && <Icon size={16} className="text-pink-600" />}
                           <span>{amenity}</span>
                         </div>
                       );
@@ -100,7 +100,7 @@ export default function Rooms() {
                   </div>
                 </div>
 
-                <button className="w-full bg-[#704822] text-white py-3 rounded-md hover:bg-[#5A3A1B] transition-colors font-medium">
+                <button className="w-full bg-gradient-to-r from-pink-600 to-rose-600 text-white py-3 rounded-md hover:from-pink-700 hover:to-rose-700 transition-all font-medium">
                   Book Now
                 </button>
               </div>

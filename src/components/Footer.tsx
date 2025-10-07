@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">
-              <span className="text-[#b37f4c]">Asian</span> Legends
+              <span className="text-pink-400">Asian</span> Legends
             </h3>
             <p className="text-slate-400 mb-4">
               Experience timeless luxury and authentic Asian hospitality in the heart of paradise.
@@ -37,25 +37,25 @@ export default function Footer() {
                 href="https://www.instagram.com/asian_legends_/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-slate-800 p-2 rounded-md hover:bg-[#8C5A2E] transition-colors"
+                className="bg-slate-800 p-2 rounded-md hover:bg-gradient-to-r hover:from-pink-600 hover:to-rose-600 transition-all"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-md hover:bg-[#8C5A2E] transition-colors"
+                className="bg-slate-800 p-2 rounded-md hover:bg-gradient-to-r hover:from-pink-600 hover:to-rose-600 transition-all"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-md hover:bg-[#8C5A2E] transition-colors"
+                className="bg-slate-800 p-2 rounded-md hover:bg-gradient-to-r hover:from-pink-600 hover:to-rose-600 transition-all"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-md hover:bg-[#8C5A2E] transition-colors"
+                className="bg-slate-800 p-2 rounded-md hover:bg-gradient-to-r hover:from-pink-600 hover:to-rose-600 transition-all"
               >
                 <Linkedin size={20} />
               </a>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-slate-400 hover:text-[#b37f4c] transition-colors"
+                    className="text-slate-400 hover:text-pink-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -93,15 +93,15 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">Contact Info</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-slate-400">
-                <MapPin size={20} className="text-[#b37f4c] flex-shrink-0 mt-1" />
+                <MapPin size={20} className="text-pink-400 flex-shrink-0 mt-1" />
                 <span>123 Legend Avenue, Downtown District, City Center, 10001</span>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
-                <Phone size={20} className="text-[#b37f4c] flex-shrink-0" />
+                <Phone size={20} className="text-pink-400 flex-shrink-0" />
                 <span>+1 (234) 567-890</span>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
-                <Mail size={20} className="text-[#b37f4c] flex-shrink-0" />
+                <Mail size={20} className="text-pink-400 flex-shrink-0" />
                 <span>info@asianlegends.com</span>
               </li>
             </ul>
@@ -114,13 +114,13 @@ export default function Footer() {
               &copy; {currentYear} Asian Legends. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-slate-400 hover:text-[#b37f4c] transition-colors">
+              <a href="#" className="text-slate-400 hover:text-pink-400 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-slate-400 hover:text-[#b37f4c] transition-colors">
+              <a href="#" className="text-slate-400 hover:text-pink-400 transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-slate-400 hover:text-[#b37f4c] transition-colors">
+              <a href="#" className="text-slate-400 hover:text-pink-400 transition-colors">
                 Cancellation Policy
               </a>
             </div>

@@ -13,7 +13,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-[#8C5A2E] font-medium tracking-wider text-sm uppercase">
+            <span className="text-pink-600 font-medium tracking-wider text-sm uppercase">
               About Us
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
@@ -30,8 +30,8 @@ export default function About() {
                 const Icon = stat.icon;
                 return (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="bg-[#eaddc8] p-3 rounded-lg">
-                      <Icon className="text-[#8C5A2E]" size={24} />
+                    <div className="bg-pink-100 p-3 rounded-lg">
+                      <Icon className="text-pink-600" size={24} />
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-slate-900">{stat.value}</div>

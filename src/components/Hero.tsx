@@ -83,7 +83,7 @@ export default function Hero() {
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight tracking-tight">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-3xl mb-12 font-light text-white/90 tracking-wide">
+                <p className="text-xl md:text-3xl font-light text-white/90 tracking-wide">
                   {slide.subtitle}
                 </p>
               </div>
